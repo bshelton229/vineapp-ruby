@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<title>Butler Blue II's post on Vine</title>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# vine-app: http://ogp.me/ns/fb/vine-app#">
+	<link rel="stylesheet" type="text/css" href="https://d3422saexnbpnl.cloudfront.net/static/style.css?10">
+	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href=""/static/style_ie7.css?011320121402"}}" /><![endif]-->
+
+	<link href="//vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+	<script src="//vjs.zencdn.net/c/video.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<meta property="twitter:card" content="player">
+	<meta property="twitter:title" content="Butler Blue II's post on Vine">
+	<meta property="twitter:description" content="Monday morning mouthing with @butlerblue3.">
+
+	<meta property="twitter:image" content="https://vines.s3.amazonaws.com/thumbs/A78A7230-46CD-4B0F-91F2-69DF5A68DFB3-182-000000401CC86A78_1.0.5.mp4.jpg?versionId=oTL6KOQe7mXKkVdmx34A9kXSbxt3Zj9e">
+	<meta property="twitter:site" content="@vineapp">
+	<meta property="twitter:player:width" content="435">
+	<meta property="twitter:player:height" content="435">
+	<meta property="twitter:player" content="https://vine.co/v/bgD2rJXvOi1/card">
+	<meta property="twitter:player:stream" content="https://vines.s3.amazonaws.com/videos/A78A7230-46CD-4B0F-91F2-69DF5A68DFB3-182-000000401CC86A78_1.0.5.mp4?versionId=CwZ4WmiQ21NPUHha8LCT3bZeQ7Yh2gEx">
+	<meta property="twitter:player:stream:content_type" content="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+
+	<meta property="og:title" content="Monday morning mouthing with @butlerblue3.">
+	<meta property="og:site_name" content="Vine">
+	<meta property="og:image" content="https://vines.s3.amazonaws.com/thumbs/A78A7230-46CD-4B0F-91F2-69DF5A68DFB3-182-000000401CC86A78_1.0.5.mp4.jpg?versionId=oTL6KOQe7mXKkVdmx34A9kXSbxt3Zj9e">
+	<meta property="fb:app_id" content="1185475921592170">
+	<meta property="og:type" content="vine-app:video" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<script>
+		$(function () {
+			var videoContainerSize = $('.video-container').width();
+			var showVolumeControl = false;
+
+    		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()))
+
+			if (videoContainerSize > 320) {
+				var shareTop = $('.share-page .card .user');
+				var shareMiddle = $('.share-page .card h1');
+				var shareBottom = $('.share-page .card .shot-with-vine');
+
+				showVolumeControl = true;
+			}
+
+			shareMiddle.height(600 - shareTop.outerHeight() - shareBottom.outerHeight());
+
+			var player = _V_('post').ready(function () {
+				this.size(videoContainerSize, videoContainerSize);
+				if (showVolumeControl) this.volume(0);
+				else $('.mute-button').remove();
+				if (!mobile) this.play();
+			});
+
+			$('.mute-button').click(function (e) {
+				if (player.volume() == 0) {
+					$(e.target).removeClass('off');
+					$(e.target).addClass('on');
+					player.volume(1);
+				} else {
+					$(e.target).removeClass('on');
+					$(e.target).addClass('off');
+					player.volume(0);
+				}
+				return false;
+			});
+
+			$('video').click(function () {
+				if (player.paused())
+					player.play()
+				else
+					player.pause()
+			});
+		});
+	</script>
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34240974-1']);
+	  _gaq.push(['_setDomainName', 'vine.co']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+
+<body class="share-page">
+
+
+
+	<div class="card">
+		<div class="video-container">
+			<a href="#" class="mute-button off"></a>
+			<video id="post" class="video-js vjs-default-skin" loop preload="auto" poster="https://vines.s3.amazonaws.com/thumbs/A78A7230-46CD-4B0F-91F2-69DF5A68DFB3-182-000000401CC86A78_1.0.5.mp4.jpg?versionId=oTL6KOQe7mXKkVdmx34A9kXSbxt3Zj9e">
+			 	<source src="https://vines.s3.amazonaws.com/videos/A78A7230-46CD-4B0F-91F2-69DF5A68DFB3-182-000000401CC86A78_1.0.5.mp4?versionId=CwZ4WmiQ21NPUHha8LCT3bZeQ7Yh2gEx" type="video/mp4">
+			</video>
+		</div>
+		<div class="info">
+			<div class="user">
+				<img src="https://vines.s3.amazonaws.com/avatars/8100D517-18A9-4E61-920D-8206FF8B6F47-16592-000009335D04D194.jpg?versionId=TV7dr2BgO9uHSurLSyVB0NgKYwBGMwmR" class="avatar">
+				<h2>Butler Blue II</h2>
+			</div>
+			<h1>
+				<div class="inner">
+					<p>Monday morning mouthing with @butlerblue3.</p>
+				</div>
+			</h1>
+			<div class="shot-with-vine">
+				<img src="https://d3422saexnbpnl.cloudfront.net/static/images/shot_with_vine.png" width="171" height="30">
+				<a class="action-button" href="https://itunes.apple.com/app/vine-make-a-scene/id592447445">Download App</a>
+			</div>
+		</div>
+	</div>
+
+</body>
