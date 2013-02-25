@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'vine_app/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "vineapp"
+  gem.name          = "vine_app"
   gem.version       = VineApp::VERSION
   gem.authors       = ["Bryan Shelton"]
   gem.email         = ["bryan@sheltonplace.com"]
