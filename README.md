@@ -5,7 +5,8 @@ A simple object describing a Twitter Vine video.
 ## Usage
 
 ```ruby
-  vine = Vine.get('https://vine.co/v/bgD2rJXvOi1')
+  require 'vine_app'
+  vine = VineApp.get('https://vine.co/v/bgD2rJXvOi1')
   => "Butler Blue II's post on Vine"
   vine.video
   => "https://vines.s3.amazonaws.com/videos/A.....mp4?
