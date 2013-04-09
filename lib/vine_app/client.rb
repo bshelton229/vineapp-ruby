@@ -10,7 +10,7 @@ module VineApp
     end
 
     def conn
-      @conn ||= Faraday.new(:url => DEFAULT_ENDPOINT) do |conn|
+      @conn ||= Faraday.new(:url => DEFAULT_ENDPOINT, :ssl => { :verify => false }) do |conn|
         conn.response :vine_app_middleware
         conn.adapter Faraday.default_adapter
       end
