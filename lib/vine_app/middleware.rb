@@ -3,7 +3,8 @@ require 'nokogiri'
 module VineApp
   class Middleware < Faraday::Middleware
     # Register the adapter
-    Faraday.register_middleware :response, :vine_app_middleware => VineApp::Middleware
+    # Faraday.register_middleware :response, :vine_app_middleware => VineApp::Middleware
+    Faraday::Response.register_middleware :vine_app_middleware => VineApp::Middleware
 
     def call(env)
       @app.call(env).on_complete do |e|
