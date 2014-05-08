@@ -1,5 +1,7 @@
 # Ruby Vine
 
+[![Build Status](https://travis-ci.org/bshelton229/vineapp-ruby.svg?branch=master)](https://travis-ci.org/bshelton229/vineapp-ruby)
+
 A simple object describing a Twitter Vine video.
 
 ## Usage
